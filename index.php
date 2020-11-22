@@ -1,5 +1,6 @@
+<?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $this->language; ?>">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
@@ -7,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>B_free - A Toolkit for more inclusion</title>
 
-    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="./css/template.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/template.css" rel="stylesheet" type="text/css">
 </head>
 <body id="home" class="sticky-bar menu-standard fontfamily_default scrolled">
 <div id="lab-main">
@@ -234,7 +235,7 @@
                                 <a href="" class="" title="LAB" rel="home">
 <span class="">
 <picture>
-<img src="./images/B_free_logo.svg"
+<img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/B_free_logo.svg"
      alt="B free Off-Canvas Menu Logo" class="">
 </picture>
  </span>
@@ -298,7 +299,7 @@
                             <a href="" class="logo-focused" title="Logo" rel="home">
 <span class="">
 <picture>
-<img src="./images/B_free_logo.svg"
+<img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/B_free_logo.svg"
      alt="B free Logo" class="" style="height:50px;">
 </picture>
 </span>
@@ -566,7 +567,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 mix development print" style="">
                         <div class="portfolio-item" tabindex="0">
                             <div class="shot-item">
-                                <img src="./images/project-1.jpg" alt="Project 1">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/project-1.jpg" alt="Project 1">
                                 <div class="single-content">
                                     <div class="fancy-table">
                                     </div>
@@ -577,7 +578,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 mix design print" style="">
                         <div class="portfolio-item" tabindex="0">
                             <div class="shot-item">
-                                <img src="./images/project-2.jpg" alt="Project 2">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/project-2.jpg" alt="Project 2">
                                 <div class="single-content">
                                     <div class="fancy-table">
                                     </div>
@@ -588,7 +589,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 mix development" style="display: none;">
                         <div class="portfolio-item" tabindex="0">
                             <div class="shot-item">
-                                <img src="./images/project-3.jpg" alt="Project 3">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/project-3.jpg" alt="Project 3">
                                 <div class="single-content">
                                     <div class="fancy-table">
                                     </div>
@@ -599,7 +600,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 mix development design" style="display: none;">
                         <div class="portfolio-item" tabindex="0">
                             <div class="shot-item">
-                                <img src="./images/project-4.jpg" alt="Project 4">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/project-4.jpg" alt="Project 4">
                                 <div class="single-content">
                                     <div class="fancy-table">
                                     </div>
@@ -610,7 +611,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 mix development" style="display: none;">
                         <div class="portfolio-item" tabindex="0">
                             <div class="shot-item">
-                                <img src="./images/project-5.jpg" alt="Project 5">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/project-5.jpg" alt="Project 5">
                                 <div class="single-content">
                                     <div class="fancy-table">
                                     </div>
@@ -621,7 +622,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 mix print design" style="">
                         <div class="portfolio-item" tabindex="0">
                             <div class="shot-item">
-                                <img src="./images/project-6.jpg" alt="Project 6">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/project-6.jpg" alt="Project 6">
                                 <div class="single-content">
                                     <div class="fancy-table">
                                     </div>
@@ -648,7 +649,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="team-item">
                             <figure tabindex="0">
-                                <img src="./images/member-1.jpg" alt="Member 1">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/member-1.jpg" alt="Member 1">
                                 <figcaption>
                                     <div class="info">
                                         <h3>Alice. W</h3>
@@ -676,7 +677,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="team-item">
                             <figure tabindex="0">
-                                <img src="./images/member-2.jpg" alt="Member 2">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/member-2.jpg" alt="Member 2">
                                 <figcaption>
                                     <div class="info">
                                         <h3>Ben. H</h3>
@@ -704,7 +705,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="team-item">
                             <figure tabindex="0">
-                                <img src="./images/member-3.jpg" alt="Member 3">
+                                <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/member-3.jpg" alt="Member 3">
                                 <figcaption>
                                     <div class="info">
                                         <h3>Catherine. G</h3>
@@ -747,7 +748,7 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="item">
                             <div class="all-testimonial">
-                                <div class="text-center"><img class="img-box" src="./images/customer-1.jpg"
+                                <div class="text-center"><img class="img-box" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/customer-1.jpg"
                                                               alt="client image1"></div>
                                 <div class="testimonial">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -798,7 +799,7 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="item">
                             <div class="all-testimonial">
-                                <div class="text-center"><img class="img-box" src="./images/customer-2.jpg"
+                                <div class="text-center"><img class="img-box" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/customer-2.jpg"
                                                               alt="client image2"></div>
                                 <div class="testimonial">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -1013,7 +1014,7 @@
                 <div class="row footer-dark">
                     <div class=" col-sm-6 col-lg-3 foot-col-padd">
                         <div class="foot-logo">
-                            <img src="./images/B_free_logo.svg"
+                            <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/B_free_logo.svg"
                                  alt="B free footer Logo" class="float-center img-fluid">
                         </div>
                         <div class="dream-text">

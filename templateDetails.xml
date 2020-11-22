@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+    <name>Accessible-Web-Template</name>
+    <creationDate>2020-11-22</creationDate>
+    <author>Hendrik Pfaff</author>
+    <authorEmail>email@hendrik-pfaff.de</authorEmail>
+    <authorUrl>http://www.hendrik-pfaff.de</authorUrl>
+    <copyright>Hendrik Pfaff 2020</copyright>
+    <license>GNU/GPL</license>
+    <version>3.0</version>
+    <description>A WCAG 2.1 AAA and ADA compliant Joomla Template</description>
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+    </files>
+    <positions>
+        <position>breadcrumb</position>
+        <position>left</position>
+        <position>right</position>
+        <position>top</position>
+        <position>user1</position>
+        <position>user2</position>
+        <position>user3</position>
+        <position>user4</position>
+        <position>footer</position>
+    </positions>
+</extension>
