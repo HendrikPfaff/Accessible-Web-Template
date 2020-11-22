@@ -2,12 +2,7 @@
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>B_free - A Toolkit for more inclusion</title>
-
+    <jdoc:include type="head" />
     <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/template.css" rel="stylesheet" type="text/css">
 </head>
@@ -390,7 +385,7 @@
 
 
     <div class="jumbotron" id="jumbotron">
-        <h1 class="display-4">Totally not a stolen Template</h1>
+        <h1 class="display-4">Barrierefreiheit beginnt im Kopf</h1>
         <p class="lead">Accessible | Responsive | Lightweight</p>
         <hr class="my-4">
         <p>The Best Accessible (WCAG 2.1 - Level AAA) Bootstrap Template</p>
@@ -1296,11 +1291,11 @@
     </footer>
 
 </div>
-<script src="./js/jquery-3.js"></script>
-<script src="./js/bootstrap.js"></script>
-<script src="./js/mixitup.js"></script>
-<script src="./js/js-cookie.js"></script>
-<script src="./js/main.js"></script>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/js/jquery-3.js"></script>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/js/bootstrap.js"></script>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/js/mixitup.js"></script>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/js/js-cookie.js"></script>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/js/main.js"></script>
 
 
 </body>
