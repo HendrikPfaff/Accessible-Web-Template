@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="template">
-    <name>Accessible-Web-Template</name>
+    <name>Accessible Web Template</name>
     <creationDate>2020-11-22</creationDate>
     <author>Hendrik Pfaff</author>
     <authorEmail>email@hendrik-pfaff.de</authorEmail>
-    <authorUrl>http://www.hendrik-pfaff.de</authorUrl>
+    <authorUrl>https://www.hendrik-pfaff.de</authorUrl>
     <copyright>Hendrik Pfaff 2020</copyright>
     <license>GNU/GPL</license>
     <version>3.0</version>
@@ -18,14 +18,40 @@
         <folder>fonts</folder>
     </files>
     <positions>
-        <position>breadcrumb</position>
-        <position>left</position>
-        <position>right</position>
+        <position>title</position>
         <position>top</position>
-        <position>user1</position>
-        <position>user2</position>
-        <position>user3</position>
-        <position>user4</position>
         <position>footer</position>
+        <position>social-icons</position>
+        <position>top-menu</position>
+        <position>jumbotron</position>
+        <position>off-menu</position>
+        <position>side-menu</position>
+        <position>footer-menu</position>
     </positions>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="siteTitle"
+                       type="text"
+                       label="Title"
+                       description="Global title of the site"
+                />
+                <field name="contactEmail"
+                       type="text"
+                       label="Contact email"
+                       description="Displayed email address for contact"
+                />
+                <field name="contactPhone"
+                       type="text"
+                       label="Contact Phone No."
+                       description="Displayed phone number for contact"
+                />
+                <field name="contactAddress"
+                       type="text"
+                       label="Contact Address"
+                       description="Displayed address for contact"
+                />
+            </fieldset>
+        </fields>
+    </config>
 </extension>
