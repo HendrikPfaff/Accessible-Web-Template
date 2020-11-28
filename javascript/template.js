@@ -105,6 +105,7 @@ jQuery(document).ready(function () {
 
     nightModeButton.click(function(event){
         event.preventDefault();
+        console.log("Night mode clicked");
         if(viewMode !== "night"){
 
         } else {
@@ -113,6 +114,7 @@ jQuery(document).ready(function () {
     });
     contrastButton.click(function(event){
         event.preventDefault();
+        console.log("Contrast mode clicked");
         if(viewMode !== "contrast"){
             body.css("background-color", "#000");
         } else {

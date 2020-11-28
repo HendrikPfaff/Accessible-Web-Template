@@ -10,12 +10,14 @@
     <version>3.0</version>
     <description>A WCAG 2.1 AAA and ADA compliant Joomla Template</description>
     <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>javascript</folder>
+        <folder>language</folder>
         <filename>index.php</filename>
         <filename>templateDetails.xml</filename>
-        <folder>images</folder>
-        <folder>css</folder>
-        <folder>javascript</folder>
-        <folder>fonts</folder>
     </files>
     <positions>
         <position>title</position>
@@ -30,8 +32,10 @@
     </positions>
 
     <languages folder="language">
-        <language tag="de-DE">de-DE/de-DE.tpl_accessible.ini</language>
-        <language tag="de-DE">de-DE/de-DE.tpl_accessible.sys.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_accessiblewebtemplate.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_accessiblewebtemplate.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_accessiblewebtemplate.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_accessiblewebtemplate.sys.ini</language>
     </languages>
 
     <config>
@@ -39,32 +43,44 @@
             <fieldset name="advanced">
                 <field name="siteTitle"
                        type="text"
-                       label="Title"
-                       description="Global title of the site"
+                       label="TPL_ADMIN_SITE_TITLE"
+                       description="TPL_ADMIN_SITE_TITLE_DESC"
                        default=""
                 />
-                <field name="logo"
+                <field name="siteLogo"
                        type="media"
-                       label="Logo"
-                       description="Global template logo"
+                       label="TPL_ADMIN_LOGO"
+                       description="TPL_ADMIN_LOGO_DESC"
                        default=""
+                />
+                <field name="siteWebLink"
+                       type="text"
+                       label="TPL_ADMIN_WEBLINK"
+                       description="TPL_ADMIN_WEBLINK_DESC"
+                       default="https://"
+                />
+                <field name="siteOwner"
+                       type="text"
+                       label="TPL_ADMIN_OWNER"
+                       description="TPL_ADMIN_OWNER_DESC"
+                       default="Jon Doe"
                 />
                 <field name="contactEmail"
                        type="text"
-                       label="Contact email"
-                       description="Displayed email address for contact"
+                       label="TPL_ADMIN_CONTACT_EMAIL"
+                       description="TPL_ADMIN_CONTACT_EMAIL_DESC"
                        default="info@email.com"
                 />
                 <field name="contactPhone"
                        type="text"
-                       label="Contact Phone No."
-                       description="Displayed phone number for contact"
+                       label="TPL_ADMIN_CONTACT_PHONE"
+                       description="TPL_ADMIN_CONTACT_PHONE_DESC"
                        default="+49-555-12345"
                 />
                 <field name="contactAddress"
                        type="text"
-                       label="Contact Address"
-                       description="Displayed address for contact"
+                       label="TPL_ADMIN_CONTACT_ADDRESS"
+                       description="TPL_ADMIN_CONTACT_ADDRESS_DESC"
                        default="Street, No., Zip, State"
                 />
             </fieldset>

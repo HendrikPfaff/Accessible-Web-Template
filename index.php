@@ -15,16 +15,16 @@
         <div class="lab-skip-menu">
             <ul id="menu-skip-menu" class="menu">
                 <li class="menu-item">
-                    <a href="#jumbotron">Skip to content</a>
+                    <a href="#jumbotron"><?php echo JText::_('TPL_SKIP_TO_CONTENT'); ?></a>
                 </li>
                 <li class="menu-item">
-                    <a href="#block_settings">Skip to accessibility menu</a>
+                    <a href="#block_settings"><?php echo JText::_('TPL_SKIP_TO_ACCESSIBILITY_MENU'); ?></a>
                 </li>
                 <li class="menu-item">
-                    <a href="#lab-main-menu">Skip to main menu</a>
+                    <a href="#lab-main-menu"><?php echo JText::_('TPL_SKIP_TO_MAIN_MENU'); ?></a>
                 </li>
                 <li class="menu-item">
-                    <a href="#lab-footer">Skip to footer</a>
+                    <a href="#lab-footer"><?php echo JText::_('TPL_SKIP_TO_FOOTER'); ?></a>
                 </li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
             </a>
             <div class="open-accessibility">
                 <ul class="lab-wcag-settings clearfix">
-                    <li class="siteaccess-label">Site Settings</li>
+                    <li class="siteaccess-label"><?php echo JText::_('TPL_SITE_SETTINGS'); ?></li>
                     <li>
                         <ul class="access-float-settings">
                             <li>
@@ -49,7 +49,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M10.544,8.717l1.166-0.855l1.166,0.855l-0.467-1.399l1.012-0.778h-1.244L11.71,5.297l-0.466,1.244H10l1.011,0.778L10.544,8.717z M15.986,9.572l-0.467,1.244h-1.244l1.011,0.777l-0.467,1.4l1.167-0.855l1.165,0.855l-0.466-1.4l1.011-0.777h-1.244L15.986,9.572z M7.007,6.552c0-2.259,0.795-4.33,2.117-5.955C4.34,1.042,0.594,5.07,0.594,9.98c0,5.207,4.211,9.426,9.406,9.426c2.94,0,5.972-1.354,7.696-3.472c-0.289,0.026-0.987,0.044-1.283,0.044C11.219,15.979,7.007,11.759,7.007,6.552 M10,18.55c-4.715,0-8.551-3.845-8.551-8.57c0-3.783,2.407-6.999,5.842-8.131C6.549,3.295,6.152,4.911,6.152,6.552c0,5.368,4.125,9.788,9.365,10.245C13.972,17.893,11.973,18.55,10,18.55 M19.406,2.304h-1.71l-0.642-1.71l-0.642,1.71h-1.71l1.39,1.069l-0.642,1.924l1.604-1.176l1.604,1.176l-0.642-1.924L19.406,2.304z"></path>
                                     </svg>
-                                    <span class="lab-only">Night mode</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_NIGHT_MODE'); ?></span>
                                 </button>
                             </li>
                             <li>
@@ -57,13 +57,13 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M10,0.469c-5.264,0-9.531,4.268-9.531,9.531c0,5.265,4.268,9.531,9.531,9.531c5.265,0,9.531-4.267,9.531-9.531C19.531,4.736,15.265,0.469,10,0.469 M10,18.665c-4.786,0-8.665-3.88-8.665-8.665c0-4.786,3.879-8.665,8.665-8.665V18.665z"></path>
                                     </svg>
-                                    <span class="lab-only">Hight contrast</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_HIGH_CONTRAST'); ?></span>
                                 </button>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="fontfamily-label">Font Family</li>
+                    <li class="fontfamily-label"><?php echo JText::_('TPL_FONT_FAMILY'); ?></li>
                     <li>
                         <ul class="access-float-fontfamily">
                             <li>
@@ -110,7 +110,7 @@
                     </li>
 
 
-                    <li class="resizer-label">Font Settings</li>
+                    <li class="resizer-label"><?php echo JText::_('TPL_FONT_SETTINGS'); ?></li>
                     <li>
                         <ul class="access-float-font">
                             <li>
@@ -118,7 +118,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 10 15 L 10 17 L 22 17 L 22 15 Z"></path>
                                     </svg>
-                                    <span class="lab-only">Smaller</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_SMALLER'); ?></span>
                                 </button>
                             </li>
                             <li>
@@ -126,7 +126,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z"></path>
                                     </svg>
-                                    <span class="lab-only">Larger</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_LARGER'); ?></span>
                                 </button>
                             </li>
                             <li>
@@ -134,7 +134,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M 21.75 4 C 20.078125 4 18.492188 4.660156 17.3125 5.84375 L 15.84375 7.3125 C 14.660156 8.496094 14 10.078125 14 11.75 C 14 12.542969 14.152344 13.316406 14.4375 14.03125 L 16.0625 12.40625 C 15.859375 11.109375 16.253906 9.714844 17.25 8.71875 L 18.71875 7.25 C 19.523438 6.445313 20.613281 6 21.75 6 C 22.886719 6 23.945313 6.445313 24.75 7.25 C 26.410156 8.910156 26.410156 11.621094 24.75 13.28125 L 23.28125 14.75 C 22.476563 15.554688 21.386719 16 20.25 16 C 20.027344 16 19.808594 15.976563 19.59375 15.9375 L 17.96875 17.5625 C 18.683594 17.847656 19.457031 18 20.25 18 C 21.921875 18 23.507813 17.339844 24.6875 16.15625 L 26.15625 14.6875 C 27.339844 13.503906 28 11.921875 28 10.25 C 28 8.578125 27.339844 7.027344 26.15625 5.84375 C 24.976563 4.660156 23.421875 4 21.75 4 Z M 19.28125 11.28125 L 11.28125 19.28125 L 12.71875 20.71875 L 20.71875 12.71875 Z M 11.75 14 C 10.078125 14 8.492188 14.660156 7.3125 15.84375 L 5.84375 17.3125 C 4.660156 18.496094 4 20.078125 4 21.75 C 4 23.421875 4.660156 24.972656 5.84375 26.15625 C 7.023438 27.339844 8.578125 28 10.25 28 C 11.921875 28 13.507813 27.339844 14.6875 26.15625 L 16.15625 24.6875 C 17.339844 23.503906 18 21.921875 18 20.25 C 18 19.457031 17.847656 18.683594 17.5625 17.96875 L 15.9375 19.59375 C 16.140625 20.890625 15.746094 22.285156 14.75 23.28125 L 13.28125 24.75 C 12.476563 25.554688 11.386719 26 10.25 26 C 9.113281 26 8.054688 25.554688 7.25 24.75 C 5.589844 23.089844 5.589844 20.378906 7.25 18.71875 L 8.71875 17.25 C 9.523438 16.445313 10.613281 16 11.75 16 C 11.972656 16 12.191406 16.023438 12.40625 16.0625 L 14.03125 14.4375 C 13.316406 14.152344 12.542969 14 11.75 14 Z"></path>
                                     </svg>
-                                    <span class="lab-only">Links Underline</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_LINKS_UNDERLINE'); ?></span>
                                 </button>
                             </li>
                             <li>
@@ -142,7 +142,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M 8 6 L 8 8 L 15 8 L 15 22 L 17 22 L 17 8 L 24 8 L 24 6 Z M 10 21.5 L 5.625 25 L 10 28.5 L 10 26 L 22 26 L 22 28.5 L 26.375 25 L 22 21.5 L 22 24 L 10 24 Z"></path>
                                     </svg>
-                                    <span class="lab-only">Readable</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_READABLE'); ?></span>
                                 </button>
                             </li>
                             <li>
@@ -150,7 +150,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="M 12.78125 5.28125 L 4.78125 13.28125 L 4.09375 14 L 4.78125 14.71875 L 12.78125 22.71875 L 14.21875 21.28125 L 7.9375 15 L 21 15 C 23.753906 15 26 17.246094 26 20 L 26 27 L 28 27 L 28 20 C 28 16.15625 24.84375 13 21 13 L 7.9375 13 L 14.21875 6.71875 Z"></path>
                                     </svg>
-                                    <span class="lab-only">Default Font</span>
+                                    <span class="lab-only"><?php echo JText::_('TPL_DEFAULT_FONT'); ?></span>
                                 </button>
                             </li>
                         </ul>
@@ -162,7 +162,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 L 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 C 19.875 5 23.261719 6.984375 25.21875 10 L 20 10 L 20 12 L 28 12 L 28 4 L 26 4 L 26 7.71875 C 23.617188 4.84375 20.019531 3 16 3 Z"></path>
                             </svg>
-                            <span class="lab-only">Reset all</span>
+                            <span class="lab-only"><?php echo JText::_('TPL_RESET_ALL'); ?></span>
                         </button>
                     </li>
 
@@ -1194,8 +1194,7 @@
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            <a href="" target="_blank" rel="noopener">Someone</a>. All
-                            Rights Reserved.
+                            <a href="" target="_blank" rel="noopener"><?php echo $this->siteOwner; ?></a>.
                         </p>
                     </div>
                     <div class="col-md-6  col-sm-6 col-12 copyright-text">
