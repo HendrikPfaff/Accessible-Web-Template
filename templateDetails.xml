@@ -28,6 +28,12 @@
         <position>side-menu</position>
         <position>footer-menu</position>
     </positions>
+
+    <languages folder="language">
+        <language tag="de-DE">de-DE/de-DE.tpl_accessible.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_accessible.sys.ini</language>
+    </languages>
+
     <config>
         <fields name="params">
             <fieldset name="advanced">
@@ -35,21 +41,31 @@
                        type="text"
                        label="Title"
                        description="Global title of the site"
+                       default=""
+                />
+                <field name="logo"
+                       type="media"
+                       label="Logo"
+                       description="Global template logo"
+                       default=""
                 />
                 <field name="contactEmail"
                        type="text"
                        label="Contact email"
                        description="Displayed email address for contact"
+                       default="info@email.com"
                 />
                 <field name="contactPhone"
                        type="text"
                        label="Contact Phone No."
                        description="Displayed phone number for contact"
+                       default="+49-555-12345"
                 />
                 <field name="contactAddress"
                        type="text"
                        label="Contact Address"
                        description="Displayed address for contact"
+                       default="Street, No., Zip, State"
                 />
             </fieldset>
         </fields>

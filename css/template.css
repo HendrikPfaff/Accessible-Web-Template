@@ -18,12 +18,6 @@
 }
 
 @font-face {
-    font-family: "FSMe";
-    font-display: swap;
-    src: url("../fonts/FSMe.woff2") format("woff2");
-}
-
-@font-face {
     font-family: "Tiresias";
     font-display: swap;
     src: url("../fonts/Tiresias.woff2") format("woff2");

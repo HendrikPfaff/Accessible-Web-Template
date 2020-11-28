@@ -79,6 +79,8 @@ function onComplete(value) {
 }
 
 jQuery(document).ready(function () {
+    let nightModeButton = jQuery('.toggle-night-mode');
+    let contrastButton = jQuery('.toggle-contrast');
     let ReadableFontButton = jQuery('.lab-font-readable');
     let font_normal = jQuery('.lab-font-normal');
     let font_larger = jQuery('.lab-font-larger');
@@ -87,6 +89,7 @@ jQuery(document).ready(function () {
     let open_acces = jQuery('#settings_close');
     let reset_all = jQuery('.lab-reset');
     let body = jQuery('body');
+    let viewMode = null;
     body.toggleClass('font-readable', Cookies.get('readablefont') === 'yes');
     body.toggleClass('link-underline', Cookies.get('underline') === 'yes');
     let fsCount = 100;
@@ -99,6 +102,23 @@ jQuery(document).ready(function () {
     } else {
         body.removeClass('fsize70 fsize80 fsize90 fsize100 fsize110 fsize120 fsize130');
     }
+
+    nightModeButton.click(function(event){
+        event.preventDefault();
+        if(viewMode !== "night"){
+
+        } else {
+
+        }
+    });
+    contrastButton.click(function(event){
+        event.preventDefault();
+        if(viewMode !== "contrast"){
+            body.css("background-color", "#000");
+        } else {
+            body.css("background-color", "#fff");
+        }
+    });
     font_larger.click(function (event) {
         event.preventDefault();
         if (fsCount < 130) {
