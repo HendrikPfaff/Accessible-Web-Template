@@ -1,4 +1,6 @@
-<?php defined('_JEXEC') or die('Restricted access'); ?>
+<?php defined('_JEXEC') or die('Restricted access');
+$doc = JFactory::getDocument();
+?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>">
 <head>
@@ -246,10 +248,6 @@
                                 </a>
                                 <jdoc:include type="module" name="social-icons"/>
                             </div>
-                            <br>
-                            <div class="offcanvas-butns">
-                                <button>Sample Button</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -313,7 +311,7 @@
             <div class="inside-container">
                 <div class="row">
                     <div class="col-12 our-header">
-                        <h2>Article Title</h2>
+                        <h2><?php echo $doc->getTitle(); ?></h2>
                     </div>
                 </div>
             </div>
@@ -1194,7 +1192,7 @@
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            <a href="" target="_blank" rel="noopener"><?php echo $this->siteOwner; ?></a>.
+                            <a href="" target="_blank" rel="noopener"><?php echo $this->params->get('siteOwner'); ?></a>.
                         </p>
                     </div>
                     <div class="col-md-6  col-sm-6 col-12 copyright-text">
