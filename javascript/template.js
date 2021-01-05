@@ -106,19 +106,27 @@ jQuery(document).ready(function () {
     nightModeButton.click(function(event){
         event.preventDefault();
         console.log("Night mode clicked");
+        let elements = jQuery('*');
         if(viewMode !== "night"){
-
+            viewMode = "night";
+            elements.removeClass("contrastMode");
+            elements.addClass("nightMode");
         } else {
-
+            viewMode = null;
+            elements.removeClass("nightMode");
         }
     });
     contrastButton.click(function(event){
         event.preventDefault();
         console.log("Contrast mode clicked");
+        let elements = jQuery('*');
         if(viewMode !== "contrast"){
-            body.css("background-color", "#000");
+            viewMode = "contrast";
+            elements.removeClass("nightMode");
+            elements.addClass("contrastMode");
         } else {
-            body.css("background-color", "#fff");
+            viewMode = null;
+            elements.removeClass("contrastMode");
         }
     });
     font_larger.click(function (event) {

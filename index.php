@@ -235,7 +235,7 @@ $doc = JFactory::getDocument();
                     <div id="lab-bar-right">
                         <nav id="lab-main-menu" tabindex="-1" aria-label="Primary menu">
                             <div class="lab-main-menu">
-                                <jdoc:include type="modules" name="main-menu"/>
+                                <jdoc:include type="modules" name="top-menu"/>
                             </div>
                         </nav>
                         <div id="lab-offcanvas-button">
