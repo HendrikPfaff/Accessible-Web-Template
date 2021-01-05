@@ -28,6 +28,7 @@
         <position>jumbotron</position>
         <position>off-menu</position>
         <position>side-menu</position>
+        <position>tag-cloud</position>
         <position>footer-menu</position>
     </positions>
 
@@ -77,11 +78,29 @@
                        description="TPL_ADMIN_CONTACT_PHONE_DESC"
                        default="+49-555-12345"
                 />
-                <field name="contactAddress"
+                <field name="contactName"
                        type="text"
-                       label="TPL_ADMIN_CONTACT_ADDRESS"
-                       description="TPL_ADMIN_CONTACT_ADDRESS_DESC"
-                       default="Street, No., Zip, State"
+                       label="TPL_ADMIN_CONTACT_NAME"
+                       description="TPL_ADMIN_CONTACT_NAME_DESC"
+                       default="+49-555-12345"
+                />
+                <field name="contactStreet"
+                       type="text"
+                       label="TPL_ADMIN_CONTACT_STREET"
+                       description="TPL_ADMIN_CONTACT_STREET_DESC"
+                       default="Niebelungenplatz 1"
+                />
+                <field name="contactZipcode"
+                       type="text"
+                       label="TPL_ADMIN_CONTACT_ZIPCODE"
+                       description="TPL_ADMIN_CONTACT_ZIPCODE_DESC"
+                       default="D-60318"
+                />
+                <field name="contactCity"
+                       type="text"
+                       label="TPL_ADMIN_CONTACT_CITY"
+                       description="TPL_ADMIN_CONTACT_CITY_DESC"
+                       default="Frankfurt am Main"
                 />
             </fieldset>
         </fields>

@@ -210,6 +210,10 @@ $doc = JFactory::getDocument();
                                 </a>
                             </div>
                             <jdoc:include type="modules" name="side-menu"/>
+                            <br/>
+                            <div class="offcanvas-butns">
+                                <button>Virtuelle Messe</button>
+                            </div>
                             <br>
                             <div class="ml-auto">
                                 <jdoc:include type="module" name="social-icons"/>
@@ -287,6 +291,7 @@ $doc = JFactory::getDocument();
         </div>
     </section>
 
+    <!--
     <section id="about" class="section">
         <div class="main-container">
             <div class="inside-container">
@@ -358,8 +363,10 @@ $doc = JFactory::getDocument();
             </div>
         </div>
     </section>
+    -->
 
 
+    <!--
     <section id="features" class="section">
         <div class="main-container section-bg">
             <div class="inside-container">
@@ -429,8 +436,10 @@ $doc = JFactory::getDocument();
             </div>
         </div>
     </section>
+    -->
 
 
+    <!--
     <section id="portfolios" class="section">
 
         <div class="main-container">
@@ -530,8 +539,10 @@ $doc = JFactory::getDocument();
         </div>
 
     </section>
+    -->
 
 
+    <!--
     <section id="team" class="team section">
         <div class="main-container section-bg">
             <div class="inside-container">
@@ -661,7 +672,9 @@ $doc = JFactory::getDocument();
             </div>
         </div>
     </section>
+    -->
 
+    <!--
     <section id="testimonials" class="section">
         <div class="main-container">
             <div class="inside-container">
@@ -777,7 +790,9 @@ $doc = JFactory::getDocument();
             </div>
         </div>
     </section>
+    -->
 
+    <!--
     <section id="news" class="section">
         <div class="main-container section-bg">
             <div class="inside-container">
@@ -839,8 +854,9 @@ $doc = JFactory::getDocument();
             </div>
         </div>
     </section>
+    -->
 
-
+<!--
     <section id="contact" class="contact section">
         <div class="main-container contact-bg">
             <div class="inside-container">
@@ -876,9 +892,11 @@ $doc = JFactory::getDocument();
             </div>
         </div>
     </section>
+    -->
 
     <footer id="lab-footer" class="page-footer footer-bg">
 
+        <!--
         <div class="main-container footer-dark call-to-action">
             <div class="inside-container">
                 <div class="row">
@@ -897,8 +915,9 @@ $doc = JFactory::getDocument();
                 </div>
             </div>
         </div>
+        -->
 
-
+<!--
         <div class="main-container footer-light contacts">
             <div class="inside-container">
                 <div class="row">
@@ -931,8 +950,75 @@ $doc = JFactory::getDocument();
                 </div>
             </div>
         </div>
+        -->
 
+        <div class="main-container footer-dark">
+            <div class="inside-container">
+                <div class="row footer-dark">
+                    <div class="col-sm-6 col-lg-4 foot-col-padd">
+                        <div class="foot-logo">
+                            <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/b-free-logo.svg" alt="B free footer Logo" class="float-center img-fluid" style="max-width: 50%">
+                        </div>
+                        <div class="foot-logo">
+                            <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/fra-uas-logo.png" alt="B free footer Logo" class="float-center img-fluid" style="max-width: 50%">
+                        </div>
+                        <div class="dream-text">
+                            <p>Ein Projekt des Masterstudiengangs <i><a href="https://www.frankfurt-university.de/de/studium/master-studiengange/inclusive-design-id-msc/" target="_blank">Inclusive Design</a></i> der <a href="https://www.frankfurt-university.de/" target="_blank">Frankfurt University of Applied Sciences</a></p>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6 col-lg-4 foot-col-padd">
+                        <h3><?php echo JText::_('TPL_TAG_CLOUD'); ?></h3>
+                        <div class="tagcloud">
+                            <ul class="tagcloudul">
+                                <li><a><span>One Page</span></a></li>
+                                <li><a><span>WCAG 2.1 (Level AAA)</span></a></li>
+                                <li><a><span>HTML5</span></a></li>
+                                <li><a><span>Bootstrap 4</span></a></li>
+                                <li><a><span>Template</span></a></li>
+                                <li><a><span>ADA Compliant</span></a></li>
+                                <li><a><span>Accessibility Ready</span></a></li>
+                                <li><a><span>jQuery</span></a></li>
+                                <li><a><span>Fully Responsive</span></a></li>
+                                <li><a><span>CSS3</span></a></li>
+                            </ul>
+                            <jdoc:include type="modules" name="tag-cloud"/>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 contact-col">
+
+                    <h3><?php echo JText::_('TPL_CONTACT_DETAILS'); ?></h3>
+                    <div class="row contact-row-margin">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M 16 3 C 11.042969 3 7 7.042969 7 12 C 7 13.40625 7.570313 15.019531 8.34375 16.78125 C 9.117188 18.542969 10.113281 20.414063 11.125 22.15625 C 13.148438 25.644531 15.1875 28.5625 15.1875 28.5625 L 16 29.75 L 16.8125 28.5625 C 16.8125 28.5625 18.851563 25.644531 20.875 22.15625 C 21.886719 20.414063 22.882813 18.542969 23.65625 16.78125 C 24.429688 15.019531 25 13.40625 25 12 C 25 7.042969 20.957031 3 16 3 Z M 16 5 C 19.878906 5 23 8.121094 23 12 C 23 12.800781 22.570313 14.316406 21.84375 15.96875 C 21.117188 17.621094 20.113281 19.453125 19.125 21.15625 C 17.554688 23.867188 16.578125 25.300781 16 26.15625 C 15.421875 25.300781 14.445313 23.867188 12.875 21.15625 C 11.886719 19.453125 10.882813 17.621094 10.15625 15.96875 C 9.429688 14.316406 9 12.800781 9 12 C 9 8.121094 12.121094 5 16 5 Z M 16 10 C 14.894531 10 14 10.894531 14 12 C 14 13.105469 14.894531 14 16 14 C 17.105469 14 18 13.105469 18 12 C 18 10.894531 17.105469 10 16 10 Z"></path>
+                            </svg>
+                        </div>
+                        <p><?php echo $this->params->get('contactName'); ?><br/><?php echo $this->params->get('contactStreet'); ?><br/><?php echo $this->params->get('contactZipcode'); ?>, <?php echo $this->params->get('contactCity'); ?></p>
+                    </div>
+                    <div class="row contact-row-margin">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M 8.65625 3 C 8.132813 3 7.617188 3.1875 7.1875 3.53125 L 7.125 3.5625 L 7.09375 3.59375 L 3.96875 6.8125 L 4 6.84375 C 3.035156 7.734375 2.738281 9.066406 3.15625 10.21875 C 3.160156 10.226563 3.152344 10.242188 3.15625 10.25 C 4.003906 12.675781 6.171875 17.359375 10.40625 21.59375 C 14.65625 25.84375 19.402344 27.925781 21.75 28.84375 L 21.78125 28.84375 C 22.996094 29.25 24.3125 28.960938 25.25 28.15625 L 28.40625 25 C 29.234375 24.171875 29.234375 22.734375 28.40625 21.90625 L 24.34375 17.84375 L 24.3125 17.78125 C 23.484375 16.953125 22.015625 16.953125 21.1875 17.78125 L 19.1875 19.78125 C 18.464844 19.433594 16.742188 18.542969 15.09375 16.96875 C 13.457031 15.40625 12.621094 13.609375 12.3125 12.90625 L 14.3125 10.90625 C 15.152344 10.066406 15.167969 8.667969 14.28125 7.84375 L 14.3125 7.8125 L 14.21875 7.71875 L 10.21875 3.59375 L 10.1875 3.5625 L 10.125 3.53125 C 9.695313 3.1875 9.179688 3 8.65625 3 Z M 8.65625 5 C 8.730469 5 8.804688 5.035156 8.875 5.09375 L 12.875 9.1875 L 12.96875 9.28125 C 12.960938 9.273438 13.027344 9.378906 12.90625 9.5 L 10.40625 12 L 9.9375 12.4375 L 10.15625 13.0625 C 10.15625 13.0625 11.304688 16.136719 13.71875 18.4375 L 13.9375 18.625 C 16.261719 20.746094 19 21.90625 19 21.90625 L 19.625 22.1875 L 22.59375 19.21875 C 22.765625 19.046875 22.734375 19.046875 22.90625 19.21875 L 27 23.3125 C 27.171875 23.484375 27.171875 23.421875 27 23.59375 L 23.9375 26.65625 C 23.476563 27.050781 22.988281 27.132813 22.40625 26.9375 C 20.140625 26.046875 15.738281 24.113281 11.8125 20.1875 C 7.855469 16.230469 5.789063 11.742188 5.03125 9.5625 C 4.878906 9.15625 4.988281 8.554688 5.34375 8.25 L 5.40625 8.1875 L 8.4375 5.09375 C 8.507813 5.035156 8.582031 5 8.65625 5 Z"></path>
+                            </svg>
+                        </div>
+                        <p><?php echo $this->params->get('contactPhone'); ?></p>
+                    </div>
+                    <div class="row contact-row-margin">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M 3 8 L 3 26 L 29 26 L 29 8 Z M 7.3125 10 L 24.6875 10 L 16 15.78125 Z M 5 10.875 L 15.4375 17.84375 L 16 18.1875 L 16.5625 17.84375 L 27 10.875 L 27 24 L 5 24 Z"></path>
+                            </svg>
+                        </div>
+                        <p><?php echo $this->params->get('contactEmail'); ?></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--
         <div class="main-container footer-dark">
             <div class="inside-container">
                 <div class="row footer-dark">
@@ -1032,8 +1118,9 @@ $doc = JFactory::getDocument();
                 </div>
             </div>
         </div>
+        -->
 
-
+        <!--
         <div class="main-container footer-light">
             <div class="inside-container">
                 <div class="row footer-light">
@@ -1052,6 +1139,7 @@ $doc = JFactory::getDocument();
                                 <li><a><span>Fully Responsive</span></a></li>
                                 <li><a><span>CSS3</span></a></li>
                             </ul>
+                            <jdoc:include type="modules" name="tag-cloud"/>
                         </div>
                     </div>
                     <div class=" col-sm-6 col-lg-4">
@@ -1120,6 +1208,7 @@ $doc = JFactory::getDocument();
                 </div>
             </div>
         </div>
+        -->
 
 
         <div class="footer-container footer-dark">

@@ -105,7 +105,6 @@ jQuery(document).ready(function () {
 
     nightModeButton.click(function(event){
         event.preventDefault();
-        console.log("Night mode clicked");
         let elements = jQuery('*');
         if(viewMode !== "night"){
             viewMode = "night";
@@ -118,7 +117,6 @@ jQuery(document).ready(function () {
     });
     contrastButton.click(function(event){
         event.preventDefault();
-        console.log("Contrast mode clicked");
         let elements = jQuery('*');
         if(viewMode !== "contrast"){
             viewMode = "contrast";
@@ -209,7 +207,7 @@ jQuery(document).ready(function () {
     if (jQuery(window).width() > 991) {
         jQuery("#lab-main #lab-wcag-mobile a, #lab-main .toggle-nav, #lab-offcanvas .toggle-nav.close, #lab-offcanvas .lab-search-box input.s, #lab-offcanvas .lab-search-box .button").attr('tabindex', '-1');
     }
-    mixitup('#portfolio');
+    //mixitup('#portfolio');
     let mySidenav = jQuery("#mySidenav");
     jQuery(".openNav").click(function () {
         mySidenav.css('width', mySidenav.width() > 1 ? "0" : "300px");
