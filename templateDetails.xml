@@ -26,6 +26,7 @@
         <position>social-icons</position>
         <position>top-menu</position>
         <position>jumbotron</position>
+        <position>breadcrumps</position>
         <position>off-menu</position>
         <position>side-menu</position>
         <position>tag-cloud</position>
@@ -82,7 +83,7 @@
                        type="text"
                        label="TPL_ADMIN_CONTACT_NAME"
                        description="TPL_ADMIN_CONTACT_NAME_DESC"
-                       default="+49-555-12345"
+                       default="Frankfurt University of Applied Sciences"
                 />
                 <field name="contactStreet"
                        type="text"

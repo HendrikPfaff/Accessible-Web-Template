@@ -241,6 +241,7 @@ $doc = JFactory::getDocument();
                             <div class="lab-main-menu">
                                 <jdoc:include type="modules" name="top-menu"/>
                             </div>
+
                         </nav>
                         <div id="lab-offcanvas-button">
                             <a class="toggle-nav open" tabindex="-1">
@@ -275,16 +276,19 @@ $doc = JFactory::getDocument();
     </header>
 
     <jdoc:include type="modules" name="jumbotron" />
+    <jdoc:include type="modules" name="breadcrumps" />
+
 
     <section id="" class="section">
         <div class="main-container">
+            <!--
             <div class="inside-container">
                 <div class="row">
                     <div class="col-12 our-header">
                         <h2><?php echo $doc->getTitle(); ?></h2>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="row row-pad">
                 <jdoc:include type="component"/>
             </div>
@@ -364,6 +368,7 @@ $doc = JFactory::getDocument();
         </div>
     </section>
     -->
+
 
 
     <!--
@@ -542,6 +547,7 @@ $doc = JFactory::getDocument();
     -->
 
 
+
     <!--
     <section id="team" class="team section">
         <div class="main-container section-bg">
@@ -673,6 +679,7 @@ $doc = JFactory::getDocument();
         </div>
     </section>
     -->
+
 
     <!--
     <section id="testimonials" class="section">
@@ -1017,6 +1024,7 @@ $doc = JFactory::getDocument();
                 </div>
             </div>
         </div>
+
 
         <!--
         <div class="main-container footer-dark">
