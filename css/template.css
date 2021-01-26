@@ -185,7 +185,7 @@ h3,
     padding-bottom: 800px;
     text-align: center;
     background: #f4f7fc;
-    background-image: url("../images/hero.jpg");
+    margin: 0!important;
     background-size: cover;
     background-position: center;
 }
@@ -487,7 +487,7 @@ body.link-underline a svg {
 }
 
 .lab-skip-menu ul.menu>li>a {
-    color: #fff;
+    color: #000;
     background: #000;
     position: absolute;
     top: 0;
@@ -599,6 +599,29 @@ body.link-underline a svg {
 #lab-logo-nav .lab-main-menu .nav-menu>.menu-item:hover,
 #lab-logo-nav .lab-main-menu .nav-menu>.menu-item a:focus {
     background-color: #f8f8f8;
+}
+
+/* Joomla submenu */
+.nav-child{
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: white;
+    position: absolute;
+}
+
+.nav-child li {
+    padding: 0.75em;
+}
+
+.nav-child li a {
+    padding: 0.75em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-style: normal;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 #lab-bar-left {
@@ -1718,19 +1741,23 @@ aural {
 
 /* ViewModes */
 .contrastMode {
-    background-color: #000;
-    color: #ffff00;
+    background-color: #000 !important;
+    color: #ffff00 !important;
     border-color: #ffff00;
 }
 
+
+
+/*
 .contrastMode:hover {
     background-color: #ffff00;
     color: #000;
 }
+*/
 
 .nightMode {
-    background-color: #373737;
-    color: #cccccc;
+    background-color: #373737 !important;
+    color: #cccccc !important;
 }
 
 .nightMode:hover {

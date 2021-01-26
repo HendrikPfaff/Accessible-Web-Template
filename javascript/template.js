@@ -89,7 +89,8 @@ jQuery(document).ready(function () {
     let open_acces = jQuery('#settings_close');
     let reset_all = jQuery('.lab-reset');
     let body = jQuery('body');
-    let viewMode = null;
+    let allElements = jQuery('*');
+    let viewMode = Cookies.get('viewMode');
     body.toggleClass('font-readable', Cookies.get('readablefont') === 'yes');
     body.toggleClass('link-underline', Cookies.get('underline') === 'yes');
     let fsCount = 100;
@@ -103,29 +104,40 @@ jQuery(document).ready(function () {
         body.removeClass('fsize70 fsize80 fsize90 fsize100 fsize110 fsize120 fsize130');
     }
 
+    if(viewMode === "contrast"){
+        allElements.removeClass("nightMode");
+        allElements.addClass("contrastMode");
+    } else if(viewMode === "night"){
+        allElements.removeClass("contrastMode");
+        allElements.addClass("nightMode");
+    } else {
+        allElements.removeClass("nightMode");
+        allElements.removeClass("contrastMode");
+    }
+
     nightModeButton.click(function(event){
         event.preventDefault();
-        let elements = jQuery('*');
         if(viewMode !== "night"){
             viewMode = "night";
-            elements.removeClass("contrastMode");
-            elements.addClass("nightMode");
+            allElements.removeClass("contrastMode");
+            allElements.addClass("nightMode");
         } else {
             viewMode = null;
-            elements.removeClass("nightMode");
+            allElements.removeClass("nightMode");
         }
+        Cookies.set('viewMode', viewMode);
     });
     contrastButton.click(function(event){
         event.preventDefault();
-        let elements = jQuery('*');
         if(viewMode !== "contrast"){
             viewMode = "contrast";
-            elements.removeClass("nightMode");
-            elements.addClass("contrastMode");
+            allElements.removeClass("nightMode");
+            allElements.addClass("contrastMode");
         } else {
             viewMode = null;
-            elements.removeClass("contrastMode");
+            allElements.removeClass("contrastMode");
         }
+        Cookies.set('viewMode', viewMode);
     });
     font_larger.click(function (event) {
         event.preventDefault();
@@ -169,12 +181,13 @@ jQuery(document).ready(function () {
         }
     });
     reset_all.click(function () {
-        body.removeClass('fsize70 fsize80 fsize90 fsize100 fsize110 fsize120 fsize130 font-readable link-underline fontfamily_inter fontfamily_andika fontfamily_fsme fontfamily_tiresias fontfamily_opendyslexic');
+        allElements.removeClass('fsize70 fsize80 fsize90 fsize100 fsize110 fsize120 fsize130 font-readable link-underline fontfamily_inter fontfamily_andika fontfamily_fsme fontfamily_tiresias fontfamily_opendyslexic contrastMode nightMode');
         fsCount = 100;
         Cookies.remove('lab-font-size', {path: cookie_path.cookiePath});
         Cookies.remove('readablefont', {path: cookie_path.cookiePath});
         Cookies.remove('underline', {path: cookie_path.cookiePath});
         Cookies.remove('fontfamily', {path: cookie_path.cookiePath});
+        Cookies.remove('viewMode', {path: cookie_path.cookiePath});
     });
     jQuery(Object.keys(fonts).join(",") + "").click(function (event) {
         event.preventDefault();
@@ -279,6 +292,15 @@ jQuery(document).ready(function () {
     });
     jQuery('.toggle-nav-close').click(function (e) {
         labOffcanvas.css('right', '-330px');
+    });
+    jQuery('.parent').click(function(e){
+        let childUl = jQuery(jQuery(this).children()[1]); // Why the actual F*ck is this necessary?
+        if(childUl.css("display") == "none"){
+            childUl.css("display", "block");
+        } else {
+            childUl.css("display", "none");
+        }
+
     });
     labOffcanvas.click(function (e) {
         e.stopPropagation();

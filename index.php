@@ -295,6 +295,46 @@ $doc = JFactory::getDocument();
         </div>
     </section>
 
+    <section id="team" class="team section">
+        <div class="main-container section-bg">
+            <div class="inside-container">
+                <div class="row">
+                    <div class="col-12 our-header">
+                        <h3>Test</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        Bild
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        Text
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team section">
+        <div class="main-container">
+            <div class="inside-container">
+                <div class="row">
+                    <div class="col-12 our-header">
+                        <h3>Test</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        Bild
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        Text
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--
     <section id="about" class="section">
         <div class="main-container">
@@ -967,28 +1007,16 @@ $doc = JFactory::getDocument();
                             <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/b-free-logo.svg" alt="B free footer Logo" class="float-center img-fluid" style="max-width: 50%">
                         </div>
                         <div class="foot-logo">
-                            <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/fra-uas-logo.png" alt="B free footer Logo" class="float-center img-fluid" style="max-width: 50%">
+                            <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/fra-uas-logo.png" alt="Logo der Frankfurt University of Applied Sciences" class="float-center img-fluid" style="max-width: 50%">
                         </div>
                         <div class="dream-text">
-                            <p>Ein Projekt des Masterstudiengangs <i><a href="https://www.frankfurt-university.de/de/studium/master-studiengange/inclusive-design-id-msc/" target="_blank">Inclusive Design</a></i> der <a href="https://www.frankfurt-university.de/" target="_blank">Frankfurt University of Applied Sciences</a></p>
+                            <p>Ein Projekt des Masterstudiengangs <em><a href="https://www.frankfurt-university.de/de/studium/master-studiengange/inclusive-design-id-msc/" target="_blank">Inclusive Design</a></em> der <a href="https://www.frankfurt-university.de/" target="_blank">Frankfurt University of Applied Sciences</a></p>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-lg-4 foot-col-padd">
                         <h3><?php echo JText::_('TPL_TAG_CLOUD'); ?></h3>
                         <div class="tagcloud">
-                            <ul class="tagcloudul">
-                                <li><a><span>One Page</span></a></li>
-                                <li><a><span>WCAG 2.1 (Level AAA)</span></a></li>
-                                <li><a><span>HTML5</span></a></li>
-                                <li><a><span>Bootstrap 4</span></a></li>
-                                <li><a><span>Template</span></a></li>
-                                <li><a><span>ADA Compliant</span></a></li>
-                                <li><a><span>Accessibility Ready</span></a></li>
-                                <li><a><span>jQuery</span></a></li>
-                                <li><a><span>Fully Responsive</span></a></li>
-                                <li><a><span>CSS3</span></a></li>
-                            </ul>
                             <jdoc:include type="modules" name="tag-cloud"/>
                         </div>
                     </div>
@@ -1018,7 +1046,7 @@ $doc = JFactory::getDocument();
                                 <path d="M 3 8 L 3 26 L 29 26 L 29 8 Z M 7.3125 10 L 24.6875 10 L 16 15.78125 Z M 5 10.875 L 15.4375 17.84375 L 16 18.1875 L 16.5625 17.84375 L 27 10.875 L 27 24 L 5 24 Z"></path>
                             </svg>
                         </div>
-                        <p><?php echo $this->params->get('contactEmail'); ?></p>
+                        <p><a href="mailto:<?php echo $this->params->get('contactEmail'); ?>"><?php echo $this->params->get('contactEmail'); ?></a></p>
                     </div>
 
                 </div>
